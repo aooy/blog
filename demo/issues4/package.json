@@ -1,0 +1,11 @@
+{
+  "name": "gray-demo",
+  "version": "1.0.0",
+  "description": "a gray demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Yangjingzhuo",
+  "license": "MIT"
+}

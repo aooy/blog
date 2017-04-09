@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>图片灰度转换算法例子</title>
+	<style type="text/css">		
+		body{
+			margin: 0 auto;
+			text-align: center;
+		}
+		h2{
+			padding-top: 40px;
+		}
+		p{
+			color: #7d837f;
+			padding-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<canvas id="head"></canvas>
+
+<h2>算法1：</h2>
+
+<canvas id="c1"></canvas>
+<p>Gray = (Red + Green + Blue) / 3</p>
+
+<h2>算法2：</h2>
+<canvas id="c2"></canvas>
+<p>Gray = (Red * 0.3 + Green * 0.59 + Blue * 0.11)</p>
+
+
+<canvas id="c2a"></canvas>
+<p>上半部分算法1，下半部分算法2</p>
+
+<h2>算法3：</h2>
+
+<canvas id="c3"></canvas>
+<p>( Math.max(Red, Green, Blue) + Math.min(Red, Green, Blue) ) / 2</p>
+
+<h2>算法4：</h2>
+
+<canvas id="c4max"></canvas>
+<p>Math.max(Red, Green, Blue)</p>
+
+
+<canvas id="c4min"></canvas>
+<p>Math.min(Red, Green, Blue)</p>
+
+<h2>算法5：</h2>
+
+<canvas id="c5red"></canvas>
+<p>Gray = Red</p>
+
+<canvas id="c5green"></canvas>
+<p>Gray = Green</p>
+
+<canvas id="c5blue"></canvas>
+<p>Gray = Blue</p>
+
+<h2>算法6：</h2>
+<p> 
+ConversionFactor = 255 / (NumberOfShades - 1) <br>
+AverageValue = (Red + Green + Blue) / 3   <br>
+Gray = Math.round((AverageValue / ConversionFactor) + 0.5) * ConversionFactor
+</p>
+<canvas id="c6"></canvas>
+<p>4 shades</p>
+
+<canvas id="c6b"></canvas>
+<p>16 shades</p>
+<div>
+
+</div>
+
+
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
