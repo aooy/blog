@@ -5,6 +5,8 @@
 
 ## 目录
 
+* [从event loop规范探究javaScript异步及浏览器更新渲染时机](https://github.com/aooy/blog/issues/5)
+
 * [6种图片灰度转换算法](https://github.com/aooy/blog/issues/4)
 
 * [滑动效果的原理及实践一个滑动小插件](https://github.com/aooy/blog/issues/3)
